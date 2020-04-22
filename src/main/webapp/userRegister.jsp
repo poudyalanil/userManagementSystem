@@ -103,6 +103,19 @@
                 font-size: 12px;
                 color: #777;
             }
+            .mgreen{
+                background-color: #18ABA2;
+                border: none;
+            }
+            .btn:hover{
+                background-color:rgba(24, 171, 162, 0.76); 
+                border: none;
+            }
+            .alignus{
+                margin-bottom: 0px; 
+                padding-bottom: 0px;
+                padding-top: 0px
+            }
 
             /* Fallback for Edge
             -------------------------------------------------- */
@@ -135,12 +148,12 @@
     <body>
         <div class="container-fluid">
             <div class="row no-gutter">
-                <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+                <div class="d-none d-md-flex col-md-4 col-lg-6 mgreen" ></div>
                 <div class="col-md-8 col-lg-6">
-                    <div class="login d-flex align-items-center py-5">
+                    <div class="login d-flex align-items-center py-5 alignus">
                         <div class="container">
-                            <div class="row">
-                                <div class="col-md-9 col-lg-8 mx-auto">
+                            <div class="row"  >
+                                <div class="col-md-9 col-lg-8 mx-auto" >
                                     <h3 class="login-heading mb-4">Metrix LMS Signup</h3>
                                     <form action="resister-servlet" method="POST">
                                         <div class="form-label-group">
@@ -161,7 +174,7 @@
                                         </div>
 
                                         <div class="form-label-group">
-                                            <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+                                            <input type="email" name="email" class="form-control" placeholder="Email address" required>
                                             <label for="inputEmail">Email address</label>
                                         </div>
                                         <!--               <div class="form-label-group">   
@@ -181,9 +194,9 @@
                                         </div>
 
 
-                                        <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign Up</button>
+                                        <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2 mgreen" type="submit">Sign Up</button>
                                         <div class="text-center">
-                                            <a class="small" href="#">Sign In</a></div>
+                                            <a class="small" href="userLogin.jsp">Sign In</a></div>
                                     </form>
                                 </div>
                             </div>
